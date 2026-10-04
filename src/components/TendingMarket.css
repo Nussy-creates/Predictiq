@@ -1,0 +1,56 @@
+.trending-markets {
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 100px;
+  padding: 80px 20px;
+}
+
+.trending-markets h2 {
+  margin: 0 0 30px;
+
+  color: #ffffff;
+
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+
+  text-align: center;
+}
+
+.markets-grid {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.markets-grid .market-card {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* tablet */
+@media (max-width: 1000px) {
+  .markets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
+@media (max-width: 650px) {
+  .trending-markets {
+    padding: 60px 20px;
+  }
+
+  .trending-markets h2 {
+    font-size: 24px;
+  }
+
+  .markets-grid {
+    width: 100%;
+  }
+}

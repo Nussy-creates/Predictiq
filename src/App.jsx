@@ -13,6 +13,7 @@ function App() {
       <WalletInfo />
 
       <Routes>
+        <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/market/:marketId" element={<MarketDetails />} />
         <Route path="/portfolio" element={<Portfolio />} />
